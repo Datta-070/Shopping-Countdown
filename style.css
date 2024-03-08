@@ -1,0 +1,104 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: black;
+}
+h1{
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article{
+  margin-right: 1rem;
+}
+.deadline{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color:gold !important;
+}
+.deadline-format{
+  margin-right: 1rem;
+}
+button{
+  color: white;
+  background-color: grey;
+  width: 100%;
+  height:2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button:hover{
+  color: black;
+  background-color: goldenrod;
+  transition-duration: 1s;
+}
+img{
+  width: 500px;
+  height: 450px;
+  margin-right: 1.5rem;
+}
+.section-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1px;
+}
+h2,h3,h4,p{
+  text-transform: capitalize;
+  color: white;
+}
+.days, .hrs, .mins, .secs{
+  margin-right: 2rem;
+  color: black;
+  background-color: goldenrod;
+  padding: 8px;
+  border-radius: 5px;
+}
+span{
+  gap:1rem;
+}
+h2{
+  margin-bottom: 1.5rem;
+}
+h1{
+  animation-name: title;
+  animation-duration:4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+p{
+  text-align: justify;
+}
+@keyframes title{
+  0% {color:aquamarine;}
+  25% {color:goldenrod;}
+  50% {color:orange;}
+  75% {color:violet;}
+  100% {color:burlywood;}
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: black;
+  }
+  .section-center{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .deadline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
