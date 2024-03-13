@@ -91,5 +91,10 @@ const months = [
   let buttontext=document.getElementById("btn");
   function Booktickets(){
     let tickets= prompt("Enter the no of tickets: ");
-    alert(`Hurray ! ${tickets} booked succesfully`);  
+    if(tickets != "" && tickets != 0){
+    alert(`Hurray ! ${tickets} tickets booked succesfully`);
+    }
+    else{
+      alert("Select the number of tickets !")
+    }  
   }
